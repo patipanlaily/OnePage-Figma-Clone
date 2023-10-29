@@ -1,3 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --primary-font: "Roboto", Helvetica Neue, Helvetica, Arial, sans-serif;
+  --blue-900: #091133;
+  --blue-800: #111B47;
+  --blue-700: #222F65;
+  --blue-600: #37447E;
+  --blue-500: #505F98;
+  --blue-400: #6F7CB2;
+  --blue-300: #929ECC;
+  --blue-200: #BAC3E5;
+  --blue-100: #E7ECFF;
+  --gray-900: #141719;
+  --gray-800: #393E41;
+  --gray-700: #454E54;
+  --gray-600: #5D6970;
+  --gray-500: #76848C;
+  --gray-400: #939EA4;
+  --gray-300: #B0B8BC;
+  --gray-200: #CDD1D4;
+  --gray-100: #E9EBEC;
+}
+
 body {
-  background-color: black !important;
+  font-family: var(--primary-font) !important;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--gray-400) !important;
+}
+a:hover {
+  color: var(--gray-800) !important;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--blue-900) !important;
+  font-weight: 700 !important;
+  margin-bottom: 1.4rem !important;
+}
+
+h1 {
+  font-size: calc(2rem + 1vw) !important;
+}
+
+h2 {
+  font-size: calc(1.1rem + 1vw) !important;
+}
+
+p {
+  color: var(--blue-400);
+}
+
+.padding-override {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+@media screen and (min-width: 992px) {
+  .padding-override {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.btn-blue--default {
+  background: var(--blue-800) !important;
+  border: 1px solid var(--blue-800) !important;
+  color: white !important;
+}
+.btn-blue--default:hover {
+  background: var(--blue-600) !important;
+  border-color: var(--blue-600) !important;
+  color: white !important;
+}
+
+.btn-blue--outline {
+  background: transparent;
+  border: 1px solid var(--blue-800) !important;
+  color: var(--blue-800) !important;
+}
+.btn-blue--outline:hover {
+  background: var(--blue-600) !important;
+  border-color: var(--blue-600) !important;
+  color: white !important;
+}
+
+.clear-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-brand {
+  color: var(--blue-600) !important;
+  font-size: 26px !important;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    gap: 36px;
+  }
+}
+.navbar-nav a {
+  color: var(--blue-500);
+  font-size: 14px;
+}
+
+.card-detail {
+  color: var(--gray-600);
+  font-size: 12px;
+}
+
+.btn-full {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .btn-full {
+    width: auto;
+  }
+}
+
+nav.navbar {
+  margin-bottom: -65px;
+}
+
+.fixed-top {
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.section1 {
+  padding-top: 5rem;
+}
+@media screen and (min-width: 992px) {
+  .section1 {
+    background-image: url(../assets/images/Rectangle0.png);
+    background-size: 100% 200%;
+    background-position-x: 40em;
+    background-position-y: -20em;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+  }
+}
+
+.section6 {
+  background-image: url(../assets/images/Rectangle1.png);
+  background-size: 150% 150%;
+  background-position: top;
+  background-repeat: no-repeat;
+  padding-top: 5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .intro-group {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.price-group {
+  margin-bottom: 3rem;
+}
+.price-group .price {
+  color: var(--blue-700);
+  font-size: 50px;
+  font-weight: 700;
+}
+.price-group .price-detail {
+  color: var(--blue-600);
+}
+
+.sub-group .sub {
+  color: var(--gray-600);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+footer {
+  background: var(--blue-100);
+  padding: 2rem 0;
+}
+footer .footer-top {
+  border-bottom: 1px solid var(--gray-200);
+  padding: 0 0 1rem 0;
+}
+footer .footer-bottom {
+  padding: 1rem 0 0 0;
+}
+footer .footer-bottom .secondary-link a {
+  color: var(--blue-300) !important;
+}
+footer .footer-bottom .secondary-link a:hover {
+  color: var(--blue-600) !important;
+}
+footer .footer-bottom .social-link a {
+  color: var(--gray-300) !important;
+}
+footer .footer-bottom .social-link a:hover {
+  color: var(--gray-600) !important;
 }
